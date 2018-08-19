@@ -1,0 +1,33 @@
+/*Set all fonts to Helvetica */
+body{
+  font-family:Helvetica;
+}
+
+h1{
+  background-image: url("images/pattern.jpeg");
+  font-size:100px;
+  font-weight: bold;
+  color:khaki;
+  text-align: center;
+}
+h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+p strong {
+  font-weight: bold;
+  color:blue;
+}
+
+.brushes h2{
+  background-color: mediumspringgreen;
+}
+
+.frames h2{
+  background-color: lightcoral;
+}
+.paints h2{
+  background-color: skyblue;
+}
