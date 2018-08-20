@@ -84,3 +84,35 @@ switch (groceryItem) {
     console.log('Invalid item');
     break;
 };
+
+
+// Functions
+/*
+We can use an expression or declaration to write a Functions
+a declaration is fixed, or a expression can be to a variable creating
+an anonymous function.
+--------Example-------------------
+THis is a function Expression
+const pressPowerButton = (par1, par2) => {
+OR with a function declaration */
+function pressPowerButton = (par1, par2){
+  if (calculatorIsOn) {
+    console.log('Calculator turning off.');
+    calculatorIsOn = false;
+  } else {
+    console.log('Calculator turning on.');
+    calculatorIsOn = true;
+  };
+  return calculatorIsOn; // this is how we retun a value..
+};
+
+/* Good pratice and different way to call Functions
+We can refactor this function in three ways. The most condensed form of the function is known as concise body.
+
+Functions that take a single parameter should not use parentheses. The code will still work, but it's better practice to omit the parentheses around single parameters. However, if a function takes zero or multiple parameters, parentheses are required.
+A function composed of a sole single-line block is automatically returned. The contents of the block should immediately follow the arrow => and the return keyword can be removed. This is referred to as implicit return.
+A function composed of a sole single-line block does not need brackets.
+In other words, the previous code can be refactored like this:
+*/
+const multiplyByNineFifths = celsius => celsius * (9/5);
+const getFahrenheit = celsius => multiplyByNineFifths(celsius) + 32;
